@@ -12,3 +12,10 @@ export default function List() {
   );
   return <ul>{listItems}</ul>;
 }
+
+export default function Person() {
+  const listPerson = people.map((person, index) =>
+    <li key={index}>{person}</li>
+  );
+  return <ul>{listPerson}</ul>;
+}
